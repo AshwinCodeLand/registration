@@ -49,3 +49,14 @@ input {
 .login-button:hover {
   background-color: #0056b3;
 }
+
+.company-name {
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  border-radius: 10px;
+  margin-left: 20px; 
+}

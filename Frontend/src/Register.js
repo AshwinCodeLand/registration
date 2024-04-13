@@ -36,6 +36,8 @@ function Register() {
   return (
     <div className="register-container">
       <div className="register-form">
+      <h1 className="company-name">Coalesce Eventz</h1>
+
         <h2>Registration Form</h2>
         <div className="form-group">
           <label htmlFor="username">Username</label>

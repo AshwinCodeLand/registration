@@ -77,14 +77,14 @@ function Admin() {
             <th>Email</th>
             <th>Password</th>
             <th>Verification Status</th>
-            <th>Status</th> {/* New heading for the Verify button */}
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
           {user.map((item, i) => {
             return (
               <tr key={i}>
-                <td>{i + 1}</td> {/* Display serial number (index + 1) */}
+                <td>{i + 1}</td> 
                 <td>{item.username}</td>
                 <td>{item.email}</td>
                 <td>{item.password}</td>
