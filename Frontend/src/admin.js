@@ -52,16 +52,16 @@ function Admin() {
   };
 
   const downloadExcel = () => {
-    const rows = [['S.No', 'Username', 'Email', 'Password', 'Verification Status']];
+    const rows = [['S.No', 'Username', 'Email','password', 'Verification Status']];
     user.forEach((item, index) => {
-      rows.push([index + 1, item.username, item.email, item.password, item.verify ? 'Verified' : 'Not Verified']);
+      rows.push([index + 1, item.username, item.email,item.password,  item.verify ? 'Verified' : 'Not Verified']);
     });
 
     const csvContent = "data:text/csv;charset=utf-8," + rows.map(e => e.join(",")).join("\n");
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");
     link.setAttribute("href", encodedUri);
-    link.setAttribute("download", "user_details.csv");
+    link.setAttribute("download", "user_details.xlsx");
     document.body.appendChild(link);
     link.click();
   };
